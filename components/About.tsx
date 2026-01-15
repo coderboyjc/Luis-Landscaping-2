@@ -8,9 +8,9 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img 
-              src="https://picsum.photos/600/800?random=10" 
-              alt="Landscaper working" 
+            <img
+              src="/assets/pexels-makrufinmuhammad-9029162.jpg"
+              alt="Landscaper working"
               className="rounded-lg shadow-xl object-cover h-[500px] w-full"
             />
             <div className="absolute -bottom-6 -right-6 bg-green-700 text-white p-6 rounded-lg shadow-lg hidden md:block">
@@ -18,10 +18,10 @@ const About: React.FC = () => {
               <p className="text-sm opacity-90">Years of Experience</p>
             </div>
           </div>
-          
+
           <div>
             <h2 className="text-3xl font-bold text-stone-900 font-serif mb-6">
-              More Than Just Cutting Grass.<br/>
+              More Than Just Cutting Grass.<br />
               We Cultivate Relationships.
             </h2>
             <p className="text-lg text-stone-600 mb-6">

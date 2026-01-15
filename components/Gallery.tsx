@@ -7,37 +7,37 @@ const projects = [
     id: 1,
     title: "Modern Stone Patio",
     category: "Hardscape",
-    image: "https://picsum.photos/800/600?random=20"
+    image: "/assets/pexels-artbovich-8082319.jpg"
   },
   {
     id: 2,
     title: "Zen Garden Oasis",
     category: "Landscape Design",
-    image: "https://picsum.photos/800/600?random=21"
+    image: "/assets/pexels-artbovich-8134747.jpg"
   },
   {
     id: 3,
     title: "Commercial Frontage",
     category: "Maintenance",
-    image: "https://picsum.photos/800/600?random=22"
+    image: "/assets/pexels-pixabay-280222.jpg"
   },
   {
     id: 4,
     title: "Luxury Pool Deck",
     category: "Hardscape",
-    image: "https://picsum.photos/800/600?random=23"
+    image: "/assets/pexels-artbovich-7174103.jpg"
   },
   {
     id: 5,
     title: "Native Flower Beds",
     category: "Planting",
-    image: "https://picsum.photos/800/600?random=24"
+    image: "/assets/pexels-robertkso-12243105.jpg"
   },
   {
     id: 6,
     title: "Evening Landscape Lighting",
     category: "Lighting",
-    image: "https://picsum.photos/800/600?random=25"
+    image: "/assets/shaun-donnelly-3JYC5XK-LoM-unsplash.jpg"
   }
 ];
 
@@ -59,12 +59,12 @@ const Gallery: React.FC = () => {
           {projects.map((project) => (
             <div key={project.id} className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
               {/* Image */}
-              <img 
-                src={project.image} 
+              <img
+                src={project.image}
                 alt={project.title}
                 className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
-              
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-stone-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
                 <span className="text-green-400 text-sm font-bold uppercase tracking-wider mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
@@ -82,7 +82,7 @@ const Gallery: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <button className="text-green-700 font-semibold hover:text-green-800 flex items-center justify-center mx-auto group">
             View All Projects

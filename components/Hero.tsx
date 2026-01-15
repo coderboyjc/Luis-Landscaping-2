@@ -12,10 +12,15 @@ const Hero: React.FC = () => {
     <section id={SectionId.HOME} className="relative h-screen min-h-[600px] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://picsum.photos/1920/1080?grayscale&blur=2" 
-          alt="Beautiful landscaped garden" 
-          className="w-full h-full object-cover"
+        <img
+          src="/assets/hero-bg.jpg"
+          alt="Beautiful landscaped garden by Luis Landscaping"
+          className="w-full h-full object-cover hidden md:block"
+        />
+        <img
+          src="/assets/pexels-jpgata-10831661.jpg"
+          alt="Beautiful landscaped garden by Luis Landscaping"
+          className="w-full h-full object-cover md:hidden"
         />
         <div className="absolute inset-0 bg-stone-900/50 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent"></div>
@@ -27,25 +32,25 @@ const Hero: React.FC = () => {
             <Star className="h-4 w-4 fill-current" />
             <span>#1 Rated in Springfield</span>
           </div>
-          
+
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
-            Professional <span className="text-green-400">Landscaping</span> <br/>
+            Professional <span className="text-green-400">Landscaping</span> <br />
             You Can Trust.
           </h1>
-          
+
           <p className="text-lg md:text-xl text-stone-200 mb-8 leading-relaxed max-w-lg">
-            From weekly lawn maintenance to complete backyard transformations. 
+            From weekly lawn maintenance to complete backyard transformations.
             We bring expert care and reliability to your outdoor space.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Button size="lg" onClick={scrollToContact} className="w-full sm:w-auto group">
               Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              variant="white" 
-              size="lg" 
+            <Button
+              variant="white"
+              size="lg"
               className="w-full sm:w-auto"
               onClick={() => document.getElementById(SectionId.SERVICES)?.scrollIntoView({ behavior: 'smooth' })}
             >
