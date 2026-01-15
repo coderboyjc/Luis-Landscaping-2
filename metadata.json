@@ -1,0 +1,8 @@
+{
+  "name": "Luis Landscaping",
+  "description": "Professional landscaping services website with AI-powered yard analysis and estimate tools.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
